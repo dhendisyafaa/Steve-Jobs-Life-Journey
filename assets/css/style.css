@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #FFDFBE;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 18px 18px;
+}
+
+header .branding{
+    width: 30%;
+}
+
+header .branding p{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+header .navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+header .navigation nav{
+    display: flex;
+    width: 50%;
+}
+
+header .navigation nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+header .navigation nav ul li{
+    list-style-type: none;
+}
+
+header .navigation nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+header .navigation .circle-wrap{
+    display: flex;
+    gap: 8px;
+}
+
+header .navigation .circle-wrap > div{
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    
+}
+
+main > section{
+    padding: 0px 18px;
+}
+
+main section:nth-last-col{
+    padding: 0;
+}
+
+/* hero */
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 45%;
+}
+
+.hero .hero-text p:nth-child(1){
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.hero .hero-text p span{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.hero .hero-text .main-text{
+    font-weight: 900;
+    font-size: 80px;
+    font-family: 'Playfair Display', serif !important;
+    width: 80%; 
+}
+
+.hero .hero-text p:nth-child(3){
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.hero .hero-text .button-track{
+    display: flex;
+    gap: 40px;
+}
+
+.hero .hero-text .button-track button{
+    background-color: black;
+    color: white;
+    padding: 16px 18px;
+}
+
+/* childhood */
+
+.childhood .img-childhood{
+    display: flex;
+    gap: 48px;
+}
+
+.childhood .img-childhood img{
+    width: 417px;
+    height: 417px;
+}
+
+.img-childhood .text-around-img .header-childhood{
+    font-weight: 900;
+    font-size: 64px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.childhood .year-born{
+    font-weight: 500;
+    font-size: 128px;
+}
+
+.childhood .year-born::before{
+    content: '-';
+    width: 56px;
+    height: 12px;
+    color: #59C1BD;
+}
+
+.img-childhood .text-around-img .around-img{
+    float: left;
+    shape-outside: url(childhood2.png);
+    margin: 0px 30px 30px 0px;
+    width: 329px;
+    height: 328px;
+}
+
+/* quotes */
+
+.quotes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.quotes .quotes-block{
+    background-color: #0D4C92;
+    padding: 51px;
+    width: 45%;
+}
+
+.quotes .quotes-block p{
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+
+.quotes .quotes-block span{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.quotes .quotes-block .text-quotes{
+    position: absolute;
+    bottom: 40px;
+    width: 55%;
+}
+
+.quotes .quotes-block .text-quotes p{
+    font-weight: 700;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.quotes img{
+    width: 719px;
+    height: 581px;
+}
+
+/* first computer */
+
+.first-computer{
+    display: flex;
+    gap: 31px;
+}
+
+.first-computer .title{
+    width: 40%;
+}
+
+.first-computer .title p{
+    font-weight: 900;
+    font-size: 64px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.first-computer .story{
+    width: 60%;
+    padding: 10px;
+}
+
+.first-computer .story p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+/* word-highlights */
+
+.word-highlights{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    display: flex;
+    padding: 32px;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+}
+
+.word-highlights ul > li{
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.word-highlights ul:nth-child(1) li{
+    list-style-type: none;
+}
+
+/* life story */
+
+.life-story{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    row-gap: 80px;
+}
+
+/* .story1, .story2, .story3, .story4{
+    border: 1px solid red;
+} */
+
+.life-story .story1 img{
+    width: 504px;
+    height: 617px;
+}
+
+.life-story .story1 p{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.life-story .story2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.life-story .story2 p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+.life-story .story3{
+    display: flex;
+    flex-direction: column;
+}
+
+.life-story .story3 .header-story3{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 115.99%;
+
+}
+
+.life-story .story3 p:nth-child(2){
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+.life-story .story4 p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+.life-story .story4 img{
+    width: 784px;
+    height: 479px;
+}
+
+/* education */
+
+.education{
+    background-color: black;
+    color: white;
+    padding: 40px 20px; 
+}
+
+.education .header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.education .header p{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.education .header span{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.education .header p:nth-child(2){
+    font-weight: 900;
+    font-size: 96px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.education .header, .education .edu{
+    width: 90%;
+}
+
+.education .edu .header{
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.education .edu .desc{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+.edu1, .edu2, .edu3, .edu4{
+    border-bottom: 1px solid white;
+    padding: 60px 0px;
+}
+
+/* innovations */
+
+.innovations .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innovations .header p:nth-child(1){
+    font-weight: 900;
+    font-size: 86px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.innovations .header p:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.innovations .computers-img{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.innovations .quotes p{
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer .inner-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .inner-footer .quotes p{
+    font-weight: 900;
+    font-size: 86px;
+    font-family: 'Playfair Display', serif !important;
+    color: white;
+    text-align: right;
+}
+
+.footer .header p{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.footer .header span{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer .inner-footer button{
+    background-color: white;
+    color: black;
+    width: 337px;
+    height: 43px;
+}
