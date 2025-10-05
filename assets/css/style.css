@@ -357,7 +357,7 @@ main section:nth-last-col {
     font-size: 24px;
 }
 
-.education .header p:nth-child(1) span {
+.education .header span {
     font-weight: 700;
     font-size: 24px;
 }
