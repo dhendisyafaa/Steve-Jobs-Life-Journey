@@ -1,135 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     background-color: #FFDFBE;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     gap: 10vh;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     padding: 18px 18px;
+    position: sticky;
+    top: 0;
+    background-color: #FFDFBE;
+    z-index: 9999;
 }
 
-header .branding{
+header .branding {
     width: 30%;
 }
 
-header .branding p{
+header .branding p {
     font-weight: 700;
     font-size: 24px;
 }
 
-header .navigation{
+header .navigation {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex: 1;
 }
 
-header .navigation nav{
+header .navigation nav {
     display: flex;
     width: 50%;
 }
 
-header .navigation nav ul{
+header .navigation nav ul {
     display: flex;
     justify-content: space-evenly;
     flex: 1;
 }
 
-header .navigation nav ul li{
+header .navigation nav ul li {
     list-style-type: none;
 }
 
-header .navigation nav ul li a{
+header .navigation nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-size: 16px;
 }
 
-header .navigation .circle-wrap{
+header .navigation .circle-wrap {
     display: flex;
     gap: 8px;
 }
 
-header .navigation .circle-wrap > div{
-    width: 49px;
-    height: 49px;
+header .navigation .circle-wrap>div {
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: black;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     gap: 10vh;
-    
+
 }
 
-main > section{
+main>section {
     padding: 0px 18px;
 }
 
-main section:nth-last-col{
+main section:nth-last-col {
     padding: 0;
 }
 
 /* hero */
 
-.hero{
+.hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.hero .hero-text{
+.hero .hero-text {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 45%;
 }
 
-.hero .hero-text p:nth-child(1){
+.hero .hero-text p:nth-child(1) {
     font-weight: 500;
     font-size: 24px;
 }
 
-.hero .hero-text p span{
+.hero .hero-text p span {
     font-weight: 700;
     font-size: 24px;
 }
 
-.hero .hero-text .main-text{
+.hero .hero-text .main-text {
     font-weight: 900;
     font-size: 80px;
     font-family: 'Playfair Display', serif !important;
-    width: 80%; 
+    width: 80%;
 }
 
-.hero .hero-text p:nth-child(3){
+.hero .hero-text p:nth-child(3) {
     font-weight: 500;
     font-size: 20px;
 }
 
-.hero .hero-text .button-track{
+.hero .hero-text .button-track {
     display: flex;
     gap: 40px;
 }
 
-.hero .hero-text .button-track button{
+.hero .hero-text .button-track button {
     background-color: black;
     color: white;
     padding: 16px 18px;
@@ -137,35 +143,35 @@ main section:nth-last-col{
 
 /* childhood */
 
-.childhood .img-childhood{
+.childhood .img-childhood {
     display: flex;
     gap: 48px;
 }
 
-.childhood .img-childhood img{
+.childhood .img-childhood img {
     width: 417px;
     height: 417px;
 }
 
-.img-childhood .text-around-img .header-childhood{
+.img-childhood .text-around-img .header-childhood {
     font-weight: 900;
     font-size: 64px;
     font-family: 'Playfair Display', serif !important;
 }
 
-.childhood .year-born{
+.childhood .year-born {
     font-weight: 500;
     font-size: 128px;
 }
 
-.childhood .year-born::before{
+.childhood .year-born::before {
     content: '-';
     width: 56px;
     height: 12px;
     color: #59C1BD;
 }
 
-.img-childhood .text-around-img .around-img{
+.img-childhood .text-around-img .around-img {
     float: left;
     shape-outside: url(childhood2.png);
     margin: 0px 30px 30px 0px;
@@ -175,70 +181,71 @@ main section:nth-last-col{
 
 /* quotes */
 
-.quotes{
+.quotes {
     display: flex;
     justify-content: center;
     width: 100%;
     position: relative;
 }
 
-.quotes .quotes-block{
+.quotes .quotes-block {
     background-color: #0D4C92;
     padding: 51px;
     width: 45%;
 }
 
-.quotes .quotes-block p{
+.quotes .quotes-block p {
     font-weight: 500;
     font-size: 24px;
     color: white;
 }
 
-.quotes .quotes-block span{
+.quotes .quotes-block span {
     font-weight: 700;
     font-size: 24px;
 }
 
-.quotes .quotes-block .text-quotes{
+.quotes .quotes-block .text-quotes {
     position: absolute;
     bottom: 40px;
     width: 55%;
+    z-index: 10;
 }
 
-.quotes .quotes-block .text-quotes p{
+.quotes .quotes-block .text-quotes p {
     font-weight: 700;
     font-size: 48px;
     font-family: 'Playfair Display', serif !important;
 }
 
-.quotes img{
+.quotes img {
     width: 719px;
     height: 581px;
 }
 
 /* first computer */
 
-.first-computer{
+.first-computer {
     display: flex;
     gap: 31px;
 }
 
-.first-computer .title{
+.first-computer .title {
     width: 40%;
 }
 
-.first-computer .title p{
+.first-computer .title p {
     font-weight: 900;
     font-size: 64px;
     font-family: 'Playfair Display', serif !important;
 }
 
-.first-computer .story{
+.first-computer .story {
     width: 60%;
     padding: 10px;
 }
 
-.first-computer .story p{
+.first-computer .story p {
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;
@@ -246,7 +253,7 @@ main section:nth-last-col{
 
 /* word-highlights */
 
-.word-highlights{
+.word-highlights {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
     display: flex;
@@ -255,19 +262,19 @@ main section:nth-last-col{
     margin: 0px 20px;
 }
 
-.word-highlights ul > li{
+.word-highlights ul>li {
     font-weight: 600;
     font-size: 40px;
     font-family: 'Playfair Display', serif !important;
 }
 
-.word-highlights ul:nth-child(1) li{
+.word-highlights ul:nth-child(1) li {
     list-style-type: none;
 }
 
 /* life story */
 
-.life-story{
+.life-story {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 10px;
@@ -278,35 +285,35 @@ main section:nth-last-col{
     border: 1px solid red;
 } */
 
-.life-story .story1 img{
+.life-story .story1 img {
     width: 504px;
     height: 617px;
 }
 
-.life-story .story1 p{
+.life-story .story1 p {
     font-family: 'Playfair Display', serif !important;
     font-weight: 900;
     font-size: 40px;
 }
 
-.life-story .story2{
+.life-story .story2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.life-story .story2 p{
+.life-story .story2 p {
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;
 }
 
-.life-story .story3{
+.life-story .story3 {
     display: flex;
     flex-direction: column;
 }
 
-.life-story .story3 .header-story3{
+.life-story .story3 .header-story3 {
     font-family: 'Playfair Display', serif !important;
     font-weight: 900;
     font-size: 40px;
@@ -314,100 +321,104 @@ main section:nth-last-col{
 
 }
 
-.life-story .story3 p:nth-child(2){
+.life-story .story3 p:nth-child(2) {
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;
 }
 
-.life-story .story4 p{
+.life-story .story4 p {
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;
 }
 
-.life-story .story4 img{
+.life-story .story4 img {
     width: 784px;
     height: 479px;
 }
 
 /* education */
 
-.education{
+.education {
     background-color: black;
     color: white;
-    padding: 40px 20px; 
+    padding: 40px 20px;
 }
 
-.education .header{
+.education .header {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.education .header p{
+.education .header p {
     font-weight: 500;
     font-size: 24px;
 }
 
-.education .header span{
+.education .header p:nth-child(1) span {
     font-weight: 700;
     font-size: 24px;
 }
 
-.education .header p:nth-child(2){
+.education .header p:nth-child(2) {
     font-weight: 900;
     font-size: 96px;
     font-family: 'Playfair Display', serif !important;
 }
 
-.education .header, .education .edu{
+.education .header, .education .edu {
     width: 90%;
 }
 
-.education .edu .header{
+.education .edu>div:hover {
+    color: #59C1BD;
+}
+
+.education .edu .header {
     font-size: 64px;
     text-transform: uppercase;
 }
 
-.education .edu .desc{
+.education .edu .desc {
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;
 }
 
-.edu1, .edu2, .edu3, .edu4{
+.edu1, .edu2, .edu3, .edu4 {
     border-bottom: 1px solid white;
     padding: 60px 0px;
 }
 
 /* innovations */
 
-.innovations .header{
+.innovations .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.innovations .header p:nth-child(1){
+.innovations .header p:nth-child(1) {
     font-weight: 900;
     font-size: 86px;
     font-family: 'Playfair Display', serif !important;
 }
 
-.innovations .header p:nth-child(2){
+.innovations .header p:nth-child(2) {
     font-weight: 400;
     font-size: 24px;
 }
 
-.innovations .computers-img{
+.innovations .computers-img {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
 }
 
-.innovations .quotes p{
+.innovations .quotes p {
     font-weight: 500;
     font-size: 36px;
     text-align: center;
@@ -415,7 +426,7 @@ main section:nth-last-col{
 
 /* footer */
 
-.footer{
+.footer {
     background-color: black;
     padding: 50px 20px;
     color: white;
@@ -424,14 +435,14 @@ main section:nth-last-col{
     gap: 50px;
 }
 
-.footer .inner-footer{
+.footer .inner-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer .inner-footer .quotes p{
+.footer .inner-footer .quotes p {
     font-weight: 900;
     font-size: 86px;
     font-family: 'Playfair Display', serif !important;
@@ -439,19 +450,318 @@ main section:nth-last-col{
     text-align: right;
 }
 
-.footer .header p{
+.footer .header p {
     font-weight: 500;
     font-size: 24px;
 }
 
-.footer .header span{
+.footer .header span {
     font-weight: 700;
     font-size: 24px;
 }
 
-.footer .inner-footer button{
+.footer .inner-footer button {
     background-color: white;
     color: black;
     width: 337px;
     height: 43px;
+}
+
+/* md screen (max 992px) */
+@media (max-width: 992px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    header .branding {
+        width: 100%;
+        text-align: left;
+    }
+
+    header .navigation {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header .navigation nav {
+        width: 100%;
+    }
+
+    header .navigation nav ul {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero .hero-text {
+        width: 90%;
+        align-items: center;
+    }
+
+    .hero .hero-text .main-text {
+        font-size: 56px;
+        width: 100%;
+    }
+
+    .hero .hero-img img {
+        width: 85%;
+        height: auto;
+    }
+
+    .childhood {
+        text-align: center;
+    }
+
+    .childhood .year-born {
+        font-size: 100px;
+    }
+
+    .childhood .img-childhood {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .childhood .img-childhood img {
+        width: 80%;
+        height: auto;
+    }
+
+    .childhood .text-around-img {
+        width: 90%;
+        text-align: left;
+    }
+
+    .first-computer {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .first-computer .title,
+    .first-computer .story {
+        width: 100%;
+    }
+
+    .first-computer .title p {
+        font-size: 48px;
+    }
+
+    .first-computer .story p {
+        font-size: 18px;
+        line-height: 170%;
+    }
+
+    .life-story {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .life-story img {
+        width: 100%;
+        height: auto;
+    }
+
+    .life-story p {
+        font-size: 20px;
+        line-height: 170%;
+    }
+
+    .education .header p:nth-child(2) {
+        font-size: 72px;
+        text-align: center;
+    }
+
+    .education .edu .header {
+        font-size: 48px;
+    }
+
+    .education .edu .desc {
+        font-size: 18px;
+        line-height: 170%;
+    }
+
+    .innovations .header p:nth-child(1) {
+        font-size: 72px;
+        text-align: center;
+    }
+
+    .innovations .header p:nth-child(2) {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .innovations .quotes p {
+        font-size: 24px;
+    }
+
+    .footer {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .inner-footer .quotes p {
+        font-size: 56px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .footer .inner-footer button {
+        width: 70%;
+    }
+}
+
+/* sm screen (max 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    header .navigation nav {
+        width: 100%;
+    }
+
+    header .navigation .circle-wrap {
+        display: none;
+    }
+
+    header .navigation nav ul {
+        flex-direction: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero .hero-text .main-text {
+        font-size: 36px;
+    }
+
+    .childhood .year-born {
+        font-size: 64px;
+        text-align: center;
+    }
+
+    .quotes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .quotes img {
+        width: 100%;
+        height: auto;
+    }
+
+    .quotes .quotes-block {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .quotes .quotes-block .text-quotes p {
+        font-size: 24px;
+    }
+
+    .first-computer .title p {
+        font-size: 40px;
+    }
+
+    .first-computer .story p {
+        font-size: 16px;
+    }
+
+    .word-highlights {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .word-highlights ul li {
+        list-style-type: none;
+        font-size: 24px;
+    }
+
+    .life-story {
+        width: 100%;
+    }
+
+    .life-story .story1 p, .life-story .story2 p, .life-story .story3 p, .life-story .story4 p {
+        font-size: 20px;
+    }
+
+    .life-story .story1 img, .life-story .story2 img, .life-story .story3 img, .life-story .story4 img {
+        width: 400px;
+        height: auto;
+    }
+
+    .education .header p:nth-child(2) {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .education .edu .header {
+        font-size: 28px;
+    }
+
+    .education .edu .desc {
+        font-size: 18px;
+    }
+
+    .innovations .header p:nth-child(1) {
+        font-size: 40px;
+    }
+
+    .innovations .quotes p {
+        font-size: 20px;
+    }
+
+    .footer .inner-footer .quotes p {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer .inner-footer button {
+        width: 80%;
+    }
+}
+
+// Hover 
+header .navigation nav ul li a:hover {
+    color: #59C1BD;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.hero .hero-text .button-track button:hover {
+    background-color: #59C1BD;
+    color: black;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.footer .inner-footer button:hover {
+    background-color: #59C1BD;
+    color: black;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.word-highlights ul li:hover {
+    color: #59C1BD;
+    transition: 0.3s ease;
 }
